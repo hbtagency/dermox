@@ -1,0 +1,136 @@
+/* Fonts */
+@font-face {
+    font-family: 'proxima_nova_light';
+    src: url('fonts/mark_simonson_-_proxima_nova_alt_light.eot');
+    src: url('fonts/mark_simonson_-_proxima_nova_alt_light.eot?#iefix') format('embedded-opentype'), 
+        url('fonts/mark_simonson_-_proxima_nova_alt_light.woff2') format('woff2'), url('fonts/mark_simonson_-_proxima_nova_alt_light.woff') format('woff'), 
+        url('fonts/mark_simonson_-_proxima_nova_alt_light.ttf') format('truetype'), 
+        url('fonts/mark_simonson_-_proxima_nova_alt_light.svg#proxima_nova_altlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_bold';
+    src: url('fonts/proxima_nova_bold-webfont.eot');
+    src: url('fonts/proxima_nova_bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/proxima_nova_bold-webfont.woff2') format('woff2'), 
+        url('fonts/proxima_nova_bold-webfont.woff') format('woff'), url('fonts/proxima_nova_bold-webfont.ttf') format('truetype'), 
+        url('fonts/proxima_nova_bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* End of fonts */ 
+
+p,ul li,div, span, a, input,text-area,select{
+    font-family: 'proxima_nova_light';
+}
+ 
+
+header .default#main-navigation .menu-item a{
+    color:#fff;
+        font-family: 'proxima_nova_light';
+
+}
+header .default#main-navigation .menu-item a:hover{
+    color:gray;
+        font-family: 'proxima_nova_light';
+}
+
+.dermox-two-column-home .vc_column-inner{
+    padding-left:0;
+    padding-right:0;
+}
+
+.dermox-text-icon-home{
+    background-color:#252428;
+    padding:50px 0 20px 0;
+}
+.footer-info{
+    padding-top:50px;
+    background-color: #000;
+    
+}
+.footer-info .content{
+    font-size:3.3em;
+    color:#515053;
+    text-align: center;
+}
+
+.footer-info .text-center{
+    text-align: center;
+}
+.footer-info .text-center span a{
+    font-size:3.3em !important;
+    color:#515053 !important;
+    text-align: center !important;
+}
+.footer-info .text-center span a:visited,.footer-info .text-center span a:focus{
+    text-decoration: none;
+}
+
+.footer-info .top-minus-35{
+    margin-top:-25px;
+    padding-bottom: 0;
+}
+
+.footer-menu{
+    text-align: center;
+}
+.footer-menu ul{
+    display:inline-block;
+}
+.footer-menu ul li{
+    display:inline-block;
+    float:left;
+    padding:10px 20px;
+}
+.footer-menu ul li a{
+    color:#fff;
+    font-size:19px;
+}
+.footer-menu ul li a:hover{
+    text-decoration: none;
+}
+
+
+/* top nav */
+.top-menu-contact{
+    display: inline-block;
+    padding: 7px 0 4px 0;
+    font-size: 21px;
+}
+
+header .menu-main .menu-top .top-menu-contact a{
+    color: #5d5d60;
+}
+
+/* slider */
+.ms-wk .ms-slide .ms-slide-layers{
+    left:0 !important;
+    max-width: 100% !important;
+}
+.ms-wk .ms-slide .ms-slide-layers .main-slide-text{
+    bottom: 150px !important;
+    padding-top: 19px !important;
+    font-size: 40.5px !important;
+    color: gray !important;
+}
+
+.ms-wk .ms-slide .ms-slide-layers .main-slide-text .row{
+    display:inline-flex;
+}
+
+.ms-wk .ms-slide .ms-slide-layers .main-slide-text .container{
+    margin-top:-35px;
+}
+
+.ms-wk .ms-slide .ms-slide-layers .main-slide-text .container .row .col-sm-4{
+    padding: 0 40px;
+}
+/* end of slider */
+
+
+
+
+
+

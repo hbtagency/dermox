@@ -1,0 +1,10 @@
+@if $import == true {
+	@font-face{
+		font-family:'HLT SIGNERICA MEDIUM';
+		src:url('../fonts/HLT-SIGNERICA-MEDIUM.eot');
+		src:url('../fonts/HLT-SIGNERICA-MEDIUM.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HLT-SIGNERICA-MEDIUM.woff') format('woff'),
+		url('../fonts/HLT-SIGNERICA-MEDIUM.ttf') format('truetype'),
+		url('../fonts/HLT-SIGNERICA-MEDIUM.svg') format('svg');
+	}
+}

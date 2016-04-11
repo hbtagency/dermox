@@ -1,0 +1,13 @@
+.column-featured_image{
+	width: 150px;
+	height: auto;
+	overflow: hidden;
+	padding-right: 5%;
+}
+.column-featured_image img{
+	max-width: 100px;
+	height: auto;
+}
+.wp-core-ui .notice.is-dismissible{
+	display: block;
+}

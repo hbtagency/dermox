@@ -1,0 +1,25 @@
+/* Fonts */
+@font-face {
+    font-family: 'gotham_boldregular';
+    src: url('../fonts/ufonts.com_gotham-bold-webfont.eot');
+    src: url('../fonts/ufonts.com_gotham-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ufonts.com_gotham-bold-webfont.woff2') format('woff2'), url('../fonts/ufonts.com_gotham-bold-webfont.woff') format('woff'), url('../fonts/ufonts.com_gotham-bold-webfont.ttf') format('truetype'), url('../fonts/ufonts.com_gotham-bold-webfont.svg#gotham_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_altlight';
+    src: url('../fonts/mark_simonson_-_proxima_nova_alt_light.eot');
+    src: url('../fonts/mark_simonson_-_proxima_nova_alt_light.eot?#iefix') format('embedded-opentype'), url('../fonts/mark_simonson_-_proxima_nova_alt_light.woff2') format('woff2'), url('../fonts/mark_simonson_-_proxima_nova_alt_light.woff') format('woff'), url('../fonts/mark_simonson_-_proxima_nova_alt_light.ttf') format('truetype'), url('../fonts/mark_simonson_-_proxima_nova_alt_light.svg#proxima_nova_altlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../fonts/proxima_nova_bold-webfont.eot');
+    src: url('../fonts/proxima_nova_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima_nova_bold-webfont.woff2') format('woff2'), url('../fonts/proxima_nova_bold-webfont.woff') format('woff'), url('../fonts/proxima_nova_bold-webfont.ttf') format('truetype'), url('../fonts/proxima_nova_bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* End of fonts */

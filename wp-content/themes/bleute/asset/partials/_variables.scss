@@ -1,0 +1,90 @@
+//Setting
+$import : true;
+$content-size: 1170px;
+$default_padding: 0px;
+$nav-height: 80px;
+$base-line: 22px;
+$margin-base: 100px;
+
+
+// colors
+$border-color: #CDCDCD;
+$color-text-menu: #252525;
+$current-color: #262626; // Base color
+$active-color: #f07c29;  // Active color
+$Black: #000;
+$White: #fff;
+$active-color: #001b4b;
+$gray-color: #6c7990;
+$blue-active: #5ebecd;
+$blue-active-05: rgba(94,190,205, 0.15);
+$gray: #898989;
+$saphia: #ecf6f8;
+$red: #e2131b;
+$brow: #736357;
+$stick: #ff1744;
+$brown-active: #ab8e58;
+$blue-active-01: rgba(94,190,205, 0.1);
+
+$Ra: 'Raleway', sans-serif;
+$Os: 'Oswald', sans-serif;
+$Si: 'HLT SIGNERICA MEDIUM', sans-serif;
+
+//Color opacity
+
+$black_005: rgba(0,0,0, 0.05);
+$black_01: rgba(0,0,0, 0.1);
+$black_02: rgba(0,0,0, 0.2);
+$black_03: rgba(0,0,0, 0.3);
+$black_04: rgba(0,0,0, 0.4);
+$black_05: rgba(0,0,0, 0.5);
+$black_06: rgba(0,0,0, 0.6);
+$black_07: rgba(0,0,0, 0.7);
+$black_08: rgba(0,0,0, 0.8);
+$black_09: rgba(0,0,0, 0.9);
+
+
+$white_01: rgba(255,255,255, 0.1);
+$white_02: rgba(255,255,255, 0.2);
+$white_03: rgba(255,255,255, 0.3);
+$white_04: rgba(255,255,255, 0.4);
+$white_05: rgba(255,255,255, 0.5);
+$white_06: rgba(255,255,255, 0.6);
+$white_07: rgba(255,255,255, 0.7);
+$white_08: rgba(255,255,255, 0.8);
+$white_09: rgba(255,255,255, 0.9);
+
+$blue_01: rgba(0,27,75, 0.1);
+$blue_02: rgba(0,27,75, 0.2);
+$blue_03: rgba(0,27,75, 0.3);
+$blue_04: rgba(0,27,75, 0.4);
+$blue_05: rgba(0,27,75, 0.5);
+$blue_06: rgba(0,27,75, 0.6);
+$blue_07: rgba(0,27,75, 0.7);
+$blue_08: rgba(0,27,75, 0.8);
+$blue_09: rgba(0,27,75, 0.9);
+
+
+
+// fonts
+$Aw: 'FontAwesome';
+$Ti: 'Times New Roman';
+$La: 'Lato', sans-serif;
+$Me: 'Merriweather', serif;
+$Ag: 'Againts', serif;
+
+$Bold: bold;
+$Heavy: 700;
+$Light: 300;
+$Semi: 600;
+
+//Font size
+$body-size: 13px;
+
+// z-index
+$bg-zindex: 0;
+$content-zindex: 1;
+$nav-zindex: 2;
+$header-zindex: 3;
+$slide-zindex: 4;
+$button-zindex:5;
