@@ -12141,3 +12141,81 @@ body div.festi-cart-pop-up-products-content div.festi-cart-total span {
     width: 100%;
   }
 }
+
+#bleute-mobile-menu button i{
+    background:gray !important;
+}
+@media (min-width:768px) and (max-width:1200px){
+    header .spa-logo img{
+        width:200px !important;
+    }
+    
+    header .spa-logo{
+        margin-top:25px !important;
+    }
+    
+    .form-subcribe .txt-subcrible-text{
+        width:200px !important; 
+        
+    }
+    .form-subcribe .form-subcribe-view{
+        margin-left:0 !important;
+        padding-top:35px !important;
+    }
+}
+
+@media (max-width:767px) {
+    .form-subcribe .txt-subcrible-text{
+        width:150px !important; 
+        margin-left:0 !important;
+    }
+    .form-subcribe .form-subcribe-view{
+        margin-left:35px !important;
+        padding-top:0 !important;
+    }
+    
+    .top-menu-contact{
+        display:none !important;
+    }
+    header .spa-logo{
+        margin-top:5px !important;
+    }
+    header .spa-logo img{
+        width:200px !important;
+    }
+    #bleute-mobile-menu button{
+        top:45px !important;
+    }
+    header .menu-main .menu-bottom #main-nav .search-header-right{
+        margin-top:18px !important;
+    }
+    
+    .footer-menu ul li{
+        font-size:18px !important;
+        clear:both;
+        text-align: left;
+    }
+    
+    .footer-info .text-center span a{
+        font-size:20px !important;
+    }
+}
+
+@media  (max-width:419px) {
+    .form-subcribe .form-subcribe-view{
+        margin-left:25px !important;
+        padding-top:0 !important;
+    }
+    header .spa-logo{
+        margin-top:10px !important;
+    }
+    header .spa-logo img{
+        width:150px !important;
+    }
+    #bleute-mobile-menu button{
+        top:45px !important;
+    }
+    header .menu-main .menu-bottom #main-nav .search-header-right{
+        margin-top:18px !important;
+    }
+}

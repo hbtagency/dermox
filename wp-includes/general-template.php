@@ -167,7 +167,7 @@ function get_template_part( $slug, $name = null ) {
 		$templates[] = "{$slug}-{$name}.php";
 
 	$templates[] = "{$slug}.php";
-
+        
 	locate_template($templates, true, false);
 }
 

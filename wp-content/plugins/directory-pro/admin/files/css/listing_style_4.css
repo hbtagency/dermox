@@ -1,0 +1,115 @@
+.range {   
+    position: relative;
+    height: 20px;
+    
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.range-value {   
+    position: relative;
+  
+    
+}
+.range input[type="range"] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    -o-appearance: none !important;
+    appearance: none !important;
+
+    display: table-cell;
+    width: 100%;
+    background-color: transparent;
+    height: 20px;
+    cursor: pointer;
+}
+.range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    -o-appearance: none !important;
+    appearance: none !important;
+
+    width: 11px;
+    height: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0px;
+    background-color: rgb(153, 153, 153);
+}
+.range-success input[type="range"]::-webkit-slider-thumb {
+    background-color: rgb(92, 184, 92);
+}
+.range-success input[type="range"]::-moz-slider-thumb {
+    background-color: rgb(92, 184, 92);
+}
+
+
+
+.range input[type="range"] {
+    outline: none;
+}
+
+#map-marker-info .address, .map-marker-info .rating, .map-marker-info h5 {
+    margin: 0.5em 70px 0.5em 0px;
+    display: block;
+}
+#map-marker-info .map-marker-info .list-cover {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+}
+#map-marker-info .list-cover {
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+}
+.thumbnail {
+    position: relative;
+    height: 135px;
+    overflow: hidden;
+	border: 0px !important;
+ 
+    img {
+        width:920px
+        max-width: 920px; //only set this if using Twitter Bootstrap
+        position: absolute;
+        left:50%;
+        margin-left: -460px; //half of the image size
+    }
+}
+
+
+.item-list-page-wrap .navbar {
+  margin-bottom: 20px;
+  background: #eee;
+  border-radius: 0;
+  border-top: 1px #ccc solid;
+  border-bottom: 1px #ccc solid;
+}
+
+
+@media(max-width: 500px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        padding-left:10px;padding-right:10px
+    }
+}
+@media only screen and (max-width: 500px) {
+		#map { width: 350px; } 
+} 
+@media only screen and (min-width: 768px) {
+		#map { width: 740px; } 
+} 
+@media only screen and (min-width: 980px) {
+		#map { width: 980px; } 
+}
+

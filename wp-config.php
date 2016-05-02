@@ -21,20 +21,20 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-//define('DB_NAME', 'dermox');
-define('DB_NAME', 'Dermox_Staging');
+define('DB_NAME', 'dermox');
+//define('DB_NAME', 'Dermox_Staging');
 
 /** MySQL database username */
-//define('DB_USER', 'root');
-define('DB_USER', 'b93dbee0f2cd6b');
+define('DB_USER', 'root');
+//define('DB_USER', 'b93dbee0f2cd6b');
 
 /** MySQL database password */
-//define('DB_PASSWORD', '123');
-define('DB_PASSWORD', '173a37b0');
+define('DB_PASSWORD', '123');
+//define('DB_PASSWORD', '173a37b0');
 
 /** MySQL hostname */
-//define('DB_HOST', 'localhost');
-define('DB_HOST','ap-cdbr-azure-southeast-b.cloudapp.net');
+define('DB_HOST', 'localhost');
+//define('DB_HOST','ap-cdbr-azure-southeast-b.cloudapp.net');
 //define('DB_HOST','mysql://b93dbee0f2cd6b:173a37b0@ap-cdbr-azure-southeast-b.cloudapp.net/Dermox_Staging');
 
 
@@ -84,7 +84,8 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
+define( 'WP_DEBUG_LOG', true );
 
 /* That's all, stop editing! Happy blogging. */
 

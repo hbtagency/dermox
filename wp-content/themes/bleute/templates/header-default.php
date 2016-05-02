@@ -20,8 +20,10 @@
               }
             ?>
               
-            <div class="cart">
-                <a href="#">Log in</a>
+              <div class="cart" style="margin-right:20px;">
+                
+                <a href="<?php echo get_permalink(929); ?>">Member Enquiries</a>
+
               <?php
                   //if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
               ?>
@@ -30,6 +32,23 @@
                 -->    
               <?php //} ?>
             </div>
+              
+            <div class="cart">
+                
+                <?php if(is_user_logged_in()): ?>
+                    <a href="<?php echo wp_logout_url('$index.php'); ?>">Logout</a>
+                <?php endif; ?>
+                    
+
+                <?php
+                    //if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+                ?>
+                    
+                <!--
+                <a href="<?php //echo esc_url(WC()->cart->get_cart_url()); ?>"><?php //esc_html_e('My cart', 'bleute'); ?> <span>( <?php  //printf(__('%s','bleute' ), WC()->cart->cart_contents_count); ?> )</span></a>
+                -->    
+              <?php //} ?>
+            </div>  
           </div>
         </div>
       </div>

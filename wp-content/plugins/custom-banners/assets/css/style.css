@@ -1,0 +1,197 @@
+.banner_wrapper .banner {
+	background-size: cover;
+	border: 1px solid black;
+	box-sizing: content-box;
+	/* height: 300px; */
+	overflow: hidden;
+	position: relative;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height:auto;
+}
+
+@media only screen and (max-width: 500px) {
+	.banner.has_cta .banner_caption_inner {
+		display: none;
+	}
+}
+
+.rotatingBannerWidget .banner_wrapper .banner {
+	border: none;
+}
+
+.rotatingBannerWidget .cycle-slideshow {
+	border: 1px solid black;
+}
+
+.banner_wrapper .banner .custom_banners_big_link{
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index: 999; /* set high to go over caption */
+}
+
+/* Make Youtube Videos Clickable, even when Entire banner is clickable */
+.banner_caption iframe {
+    position: relative;
+    z-index: 9999;
+}
+
+.banner_wrapper .banner .banner_caption {
+	background-image: url(../img/black_70.png);
+	color: #FFFFFF;
+	padding: 20px;
+	position: absolute;
+	left: 0;
+	right: 0;
+}		
+
+.banner_wrapper .banner.bottom .banner_caption {
+	bottom: 0;
+}			
+
+.banner_wrapper .banner.top .banner_caption {
+	top: 0;
+}			
+
+.banner_wrapper .banner.left .banner_caption {
+	top: 0;
+	right: auto;
+	bottom: 0;
+	width: 30%;
+}			
+
+.banner_wrapper .banner.right .banner_caption {
+	top: 0;
+	left: auto;
+	bottom: 0;
+	width: 30%;
+}			
+
+.banner_wrapper .banner.top .banner_caption {
+	top: 0;
+}			
+
+.banner_wrapper .banner.top.has_cta .banner_caption,
+.banner_wrapper .banner.bottom.has_cta .banner_caption {
+	/* padding: 20px 140px 20px 20px; */
+	padding: 20px 20px 20px 20px;
+}
+
+.banner_wrapper .banner.left .banner_call_to_action,
+.banner_wrapper .banner.right .banner_call_to_action {
+	float: none;
+	text-align: center;
+	top: auto;
+	margin: 0 0 15px;
+	bottom: 15px;
+	right: 15px;
+	left: 15px;
+}
+
+.banner_wrapper .banner.left .banner_call_to_action .banner_btn_cta,
+.banner_wrapper .banner.right .banner_call_to_action .banner_btn_cta {
+	display: block;
+}
+
+
+.banner_wrapper .banner .banner_call_to_action {
+/* 	margin-top: -1.3em;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	vertical-align: top;
+ */
+	float: right;
+	margin-left: 10px;
+}
+
+.banner_wrapper .banner .banner_call_to_action .banner_btn_cta {
+	background: none repeat scroll 0 0 #FFA500;
+	border: 1px solid #FF8C00;
+	border-radius: 5px;
+	color: #000080;
+	display: inline-block;
+	font-weight: bold;
+	margin: 0;
+	padding: 6px 10px;
+}
+
+/* Cycle */
+.cycle-slideshow {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.custom-banners-cycle-slideshow {
+    position: relative;
+}
+
+.custom-banners-cycle-slideshow .cycle-slide{
+    right: 0;
+	left: 0;
+}
+
+.custom-b-cycle-controls{
+	text-align: center;
+}
+
+.custom-b-cycle-controls .custom-b-cycle-prev {
+	color: white;
+    cursor: pointer;
+    font-size: 34px;
+    font-weight: bold;
+    height: 34px;
+    margin-top: -17px;
+    position: absolute;
+    left: 12px;
+    text-shadow: 1px 1px 1px black;
+    top: 50%;
+    width: 40px;
+    z-index: 9999;
+}
+
+.custom-b-cycle-controls .custom-b-cycle-next {
+	color: white;
+    cursor: pointer;
+    font-size: 34px;
+    font-weight: bold;
+    height: 34px;
+    margin-top: -17px;
+    position: absolute;
+    right: 12px;
+    text-shadow: 1px 1px 1px black;
+    top: 50%;
+    width: 40px;
+    z-index: 9999;
+}
+
+.custom-b-cycle-controls .custom-b-cycle-pager {
+    bottom: 0;
+    display: inline-block;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: auto;
+    z-index: 9999;
+}
+
+.custom-b-cycle-controls .custom-b-cycle-pager span {
+    color: white;
+    cursor: pointer;
+    font-size: 38px;
+    line-height: 19px;
+    opacity: 0.5;
+}
+
+.custom-b-cycle-controls .custom-b-cycle-pager span.cycle-pager-active {
+    opacity: 1;
+}

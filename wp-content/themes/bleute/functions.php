@@ -415,4 +415,71 @@ if ( ! function_exists( 'bleute_main_menu' ) ) {
   }
 }
 
+add_action('wpcf7_before_send_mail', 'my_wpcf7_before_send_mail');
+function my_wpcf7_before_send_mail() {
+    $submission = WPCF7_Submission::get_instance();
+    $data = $submission->get_posted_data();
+    
+    
+    
+    /* Generate Attachement */
+    $fp = fopen('wp-content/uploads/memberform.csv', 'w');
+    $array = array();
+    $resultArray = array();
+    $i = 0;
+
+    foreach($data as $key => $value){
+        if(substr($key,0,6) === "_wpcf7"){
+            unset($data[$key]);
+        }
+    }
+    
+    foreach($data as $key => $value){
+        $array[$i] = $key;
+        $resultArray[$i] = is_array($value) ? $value[0] : $value;
+        $i++;
+    }
+    
+    header('Content-type: application/csv');
+    header('Content-Disposition: attachment; filename='.$fp);
+    header("Content-Transfer-Encoding: UTF-8");
+    
+    try{
+        /*
+        foreach ($array as $fields) {
+            fputcsv($fp, $fields);
+        }
+        foreach ($data as $fields) {
+            fputcsv($fp, $fields);
+        }*/
+        fputcsv2($fp, array("","","","","","Member Enquiries","","","","",""));
+        fputcsv2($fp,$array);    
+        fputcsv2($fp,$resultArray);
+    }catch (Exception $e) {
+        error_log(print_r($e->getMessage(),true));
+    }
+    
+    fclose($fp);
+}
+
+
+function fputcsv2 ($fh, array $fields, $delimiter = ',', $enclosure = '"', $mysql_null = false) { 
+    $delimiter_esc = preg_quote($delimiter, '/'); 
+    $enclosure_esc = preg_quote($enclosure, '/'); 
+
+    $output = array(); 
+    foreach ($fields as $field) { 
+        if ($field === null && $mysql_null) { 
+            $output[] = 'NULL'; 
+            continue; 
+        } 
+
+        $output[] = preg_match("/(?:${delimiter_esc}|${enclosure_esc}|\s)/", $field) ? ( 
+            $enclosure . str_replace($enclosure, $enclosure . $enclosure, $field) . $enclosure 
+        ) : $field; 
+    } 
+
+    fwrite($fh, join($delimiter, $output) . "\n"); 
+} 
+
 ?>

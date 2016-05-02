@@ -8,6 +8,7 @@ class WPCF7_Mail {
 	private $template = array();
 
 	public static function send( $template, $name = '' ) {
+            
 		$instance = new self;
 		$instance->name = trim( $name );
 		$instance->setup_template( $template );
@@ -42,7 +43,7 @@ class WPCF7_Mail {
 		$use_html = (bool) $template['use_html'];
 
 		$subject = $this->replace_tags( $template['subject'] );
-		$sender = $this->replace_tags( $template['sender'] );
+		$sender = $this->replace_tags( $template['sender']);
 		$recipient = $this->replace_tags( $template['recipient'] );
 		$additional_headers = $this->replace_tags( $template['additional_headers'] );
 

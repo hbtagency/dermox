@@ -4,15 +4,17 @@
 */
 get_header();
 ?>
+    <!--
 	<section class="menu-breadcrumb">
         <div class="container">
           <div class="breadcrumb">
             <ul>
-            	<?php if (function_exists('beau_the_breadcrumb')) beau_the_breadcrumb(); ?>
+            	<?php //if (function_exists('beau_the_breadcrumb')) beau_the_breadcrumb(); ?>
             </ul>
           </div>
         </div>
     </section>
+    -->
     <section>
     	<?php $description_header = get_post_meta( get_the_ID(), '_beautheme_header_description', TRUE ); ?>
         <div class="container">

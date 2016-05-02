@@ -1,0 +1,245 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Directory Pro Documentation </title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Directory Prop&rdquo; Documentation by &ldquo;e-plugin.com&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Directory Pro&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 15/8/2015<br>
+					By: e-plugin.com<br>
+					Email: <a href="mailto:aktar567@gmail.com">aktar567@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my plugin. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/e-plugins">here</a>. Thank you so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#ActivePlugins">Active the Plugins</a></li>
+			<li><a href="#AfterInstal">After Instal</a></li>
+			<li><a href="#customtemplate">Overriding templates</a></li>			
+			<li><a href="#short-code">Short Code | PHP Code</a></li>			
+			<li><a href="#create">Create A Package</a></li>	
+			<li><a href="#settings">Settings</a></li>
+			<li><a href="#roles">User Roles</a></li>
+			<li><a href="#bidding">Bidding</a></li>
+			<li><a href="#biddingamount">Add Bidding Amount</a></li>
+			<li><a href="#viewaccess">View Control</a></li>
+			
+		</ol>
+		
+		<hr>
+		
+		<h3 id="ActivePlugins"><strong>A) Active the Plugins</strong> - <a href="#toc">top</a></h3>
+		<p>
+			<h4><strong>Uploading in WordPress Dashboard</strong></h4>
+
+			1. Download `directory-pro.zip`<br>
+			2. Navigate to the 'Add New' in the plugins dashboard<br>
+			3. Navigate to the 'Upload' area<br>
+			4. Select `directory-pro.zip` from your computer<br>
+			5. Click 'Install Now'<br>
+			6. Activate the plugin in the Plugin dashboard<br>
+			<br>
+			<h4><strong>Using FTP</strong></h4>
+
+			1. Download `directory-pro.zip`<br>
+			2. Extract the `directory-pro` directory to your computer<br>
+			3. Upload the `directory-pro` directory to the `/wp-content/plugins/` directory<br>
+			4. Activate the plugin in the Plugin dashboard<br>
+
+			The WordPress codex contains [instructions on how to install a WordPress<br> plugin](<a target="blank" href="http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation">http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation</a>).<br>
+
+			
+			
+			</p>
+		
+		
+		<hr>	
+		
+		
+		<h3 id="AfterInstal"><strong>After Installation</strong> - <a href="#toc">top</a></h3>
+			<p>
+			1. After install the plugin reset your permalink  [ Settings-&gt;permalinks ].
+			</p>
+			<p>
+			2. Create Package for new user.
+			</p>
+
+			<p>
+			3. Create "Directories" categories
+			</p>
+			<p>
+			4. Set payment gateway and set payment gateways API keys
+
+			</p>
+				
+	
+		<hr>
+		
+		
+		
+		<h3 id="customtemplate"><strong> Overriding templates</strong> - <a href="#toc">top</a></h3>
+		<p>
+		 The  template files can be found within the /directory-pro/template/ :
+		 
+		 Copy the template folder and paste into on your current theme folder  and rename it  as "directorypro".
+		
+		</p>
+		<p>
+		 Why Overriding templates: If you change any thing on the template file then it will will not affect on your change of the plugin next upgrade .
+		</p>	
+		
+		<h3 id="short-code"><strong> Short Code | PHP Code</strong> - <a href="#toc">top</a></h3>
+		<br/>
+					
+		<b>Pricing Table </b>	
+		<br/>		
+		
+		Short Code : [iv_directories_price_table]<br/>
+		PHP Code : &lt;?php
+						echo do_shortcode('[iv_directories_price_table ]');
+					?&gt; 
+		</p>
+		<p>	
+			<br/>						
+			<b>Signup Form </b>	
+		<br/>		
+		
+		Short Code : [iv_directories_form_wizard]<br/>
+		PHP Code : &lt;?php
+						echo do_shortcode('[iv_directories_form_wizard ]');
+					?&gt; 
+		</p>
+		
+		<p>	
+			<br/>						
+			<b>My Account </b>	
+		<br/>		
+		
+		Short Code : [iv_directories_profile_template]<br/>
+		PHP Code : &lt;?php
+						echo do_shortcode('[iv_directories_profile_template ]');
+					?&gt; 
+		</p>
+		
+		<p>	
+			<br/>						
+			<b>Login  </b>	
+		<br/>		
+		
+		Short Code : [iv_directories_login]<br/>
+		PHP Code : &lt;?php
+						echo do_shortcode('[iv_directories_login ]');
+					?&gt; 
+		</p>
+		
+		<p>	
+			<br/>						
+			<b>Public Profile </b>	
+		<br/>		
+		
+		Short Code : [iv_directories_profile_public]<br/>
+		PHP Code : &lt;?php
+						echo do_shortcode('[iv_directories_profile_public ]');
+					?&gt; 
+		</p>
+		
+		
+			
+
+		<hr>
+		
+		<h3 id="create"><strong> Create A Package</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Create a package for user signup and user role.</p>
+		
+		<img src="assets/admin_package-2.png" width="950px" alt="Create  Package" />
+		  
+	
+		
+		<hr>
+		
+		<h3 id="settings"><strong> Settings</strong> - <a href="#toc">top</a></h3>
+			<p>You can chage some setting here.</p>
+			<img src="assets/admin_setting-1.png" width="950px" alt="setting" />
+		
+		
+		<hr>
+		
+		<h3 id="roles"><strong> User Roles</strong> - <a href="#toc">top</a></h3>
+			<p>User role "Basic" will create on the plugin activation. 
+			 The "Basic" role has only file upoload privilege.
+			 For under the package user will get the package role [upload pic, add post, edit post]. After cancel or unsuccesful payment it will convert to "Basic" Role.  
+				
+			</p>
+			<img src="assets/admin_package-1.png" width="950px" alt="setting" />
+			
+		<h3 id="bidding"><strong> Bidding for top search</strong> - <a href="#toc">top</a></h3>
+			<p>User can bid his/her listing/directory  for top search rank. Bidding will depend on locality 50 km redius. Admin can change the redius number from "Directory Pro" Setting->Bidding page
+				
+			</p>
+			<p>				
+			<img src="assets/bidding-1.png" width="950px" alt="setting" />	
+			</p>
+			<p>				
+			<img src="assets/bidding-2.png" width="950px" alt="setting" />	
+			</p>
+			<p>				
+			<img src="assets/bidding-3.png" width="950px" alt="setting" />	
+			</p>
+			
+			
+			<hr>
+		<h3 id="biddingamount"><strong> Add Bidding Amount</strong> - <a href="#toc">top</a></h3>
+				<p> 
+				It will add on admin Paypal and Stripe account
+				</p>	
+			<img src="assets/biddingamount1.png" width="950px" alt="setting" />
+			<p> View Payment History </p>
+			<img src="assets/biddingamount2.png" width="950px" alt="setting" />
+			<hr>
+			
+		
+		<h3 id="viewaccess"><strong> View Control</strong> - <a href="#toc">top</a></h3>
+			<p>You can control view by user role.</p>
+			<p>				
+			<img src="assets/viewaccess1.png" width="950px" alt="setting" />	
+			</p>
+		
+			
+			
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
